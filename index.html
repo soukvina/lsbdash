@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Charts</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@1"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.header{
+			height: 30px;
+			background-color: #808080;
+			color: #fff;
+			text-indent: 15px;
+			border-top-left-radius:5px;
+			border-top-right-radius: 5px;
+		}
+		.push{
+			margin-top: 30px;
+		}
+		.inside{
+			border: 1px solid #a9a9a9;
+			padding: 8px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			background-color: #fff;
+		}
+		body{
+			background-color: #dcdcdc;
+		}
+	
+
+	</style>
+
+</head>
+<body>
+	<div class="push"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="header">Lao GDP growth rate (%)</div>
+				<div class="inside">
+					<canvas id="myChart"></canvas>
+				</div>
+				
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="header">Inflation rates (%)</div>
+				<div class="inside">
+					<canvas id="barChart"></canvas>
+				</div>
+				
+			</div>
+			
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="header">Interest rates (%)</div>
+				<div class="inside">
+					<canvas id="pieChart"></canvas>
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="header">Population (millions)</div>
+				<div class="inside">
+					<canvas id="pChart"></canvas>
+				</div>
+				
+				
+			</div>
+
+			
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">Birth rates (%)</div>
+				<div class="inside">
+					<canvas id="bChart"></canvas>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="push"></div>	
+</body>
+<script src="js/chart.js"></script>
+
+</html>
